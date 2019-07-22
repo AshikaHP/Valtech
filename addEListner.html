@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        input{
+            display: block;
+            padding: 5px;
+            
+        }
+        div{
+            background-color: aquamarine;
+        
+        }
+        p{
+            font-size: 40px;
+            color:red;
+        }
+        button{
+            size: 60px;
+            color: brown;
+            padding: 5px;
+        }
+        
+        </style>
+    </head>
+<body>
+<div>
+<p>Enter two numbers</p>
+<input type="text" name="First number" id="x"/><br>
+<input type="text" name="second number" id="y" /> <br>
+<button id="result">ADD</button>
+</div>
+
+<script>
+function add() {
+    var x = Number(document.getElementById('x').value);
+    var y = Number(document.getElementById('y').value);
+    z = x+y;
+    alert(z);
+}
+document.getElementById('result').addEventListener('click', add);
+</script>
+
+</body>
+</html>
